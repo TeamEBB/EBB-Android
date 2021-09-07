@@ -60,13 +60,14 @@
         app:layout_constraintTop_toBottomOf="@id/register_pwd" />
 
 
-
     <Button
         android:id="@+id/btn_tryRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="회원가입"
         android:layout_marginTop="16dp"
+        android:background="#BDF0E9"
+        android:text="회원가입"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/register_pwdCheck" />
