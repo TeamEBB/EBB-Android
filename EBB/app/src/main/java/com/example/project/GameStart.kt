@@ -28,8 +28,9 @@ class GameStart : AppCompatActivity() {
 
 
 
-        binding.btnLogout.setOnClickListener {
-            finish()
+        binding.btnShowRanking.setOnClickListener {
+            val intent = Intent(this, Ranking::class.java)
+            startActivity(intent)
         }
 
         binding.btnStart.setOnClickListener {
