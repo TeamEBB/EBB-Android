@@ -12,24 +12,24 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="100dp"
+        android:src="@drawable/tree5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/tree5" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edt_id"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
         android:layout_marginTop="32dp"
+        android:layout_marginRight="66dp"
         android:ems="10"
         android:hint="ID"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textSize="14sp"
-        android:layout_marginLeft="66dp"
-        android:layout_marginRight="66dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,14 +39,14 @@
         android:id="@+id/edt_password"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="66dp"
         android:ems="10"
         android:hint="Password"
-        android:layout_marginLeft="66dp"
-        android:layout_marginRight="66dp"
         android:inputType="textPassword"
-        android:textSize="14sp"
         android:minHeight="48dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,9 +60,9 @@
         android:layout_marginTop="36dp"
         android:layout_marginRight="66dp"
         android:background="#BDF0E9"
-        android:textSize="20sp"
         android:text="로그인"
         android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edt_password" />
@@ -81,7 +81,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_login" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

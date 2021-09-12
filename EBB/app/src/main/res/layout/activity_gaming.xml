@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
         android:layout_marginRight="270dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -22,8 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -31,10 +31,10 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
         android:layout_marginLeft="270dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="110dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -43,8 +43,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView2"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -52,24 +52,24 @@
         android:id="@+id/btn_check_ranking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="랭킹"
-        android:background="#BDF0E9"
-        android:textSize="20sp"
         android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="#BDF0E9"
+        android:text="랭킹"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView4" />
 
     <Button
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="돌아 가기"
-        android:background="#BDF0E9"
-        android:textSize="20sp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="#BDF0E9"
+        android:text="돌아 가기"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_check_ranking" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
