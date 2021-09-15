@@ -26,6 +26,10 @@ class GameStart : AppCompatActivity() {
 
         binding.changeTree.setImageResource(treeImage)
 
+        binding.btnStart.setOnClickListener {
+            val intent = Intent(this, Gaming::class.java)
+            startActivity(intent)
+        }
 
 
         binding.btnShowRanking.setOnClickListener {
@@ -33,10 +37,7 @@ class GameStart : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.btnStart.setOnClickListener {
-            val intent = Intent(this, Gaming::class.java)
-            startActivity(intent)
-        }
+
 
     }
 }
