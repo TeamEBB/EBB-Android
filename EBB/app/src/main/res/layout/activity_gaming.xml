@@ -8,35 +8,44 @@
 
     <ImageView
         android:id="@+id/imageCan"
-        android:layout_width="100dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/can"
         app:layout_constraintEnd_toStartOf="@id/imagePlastic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/can" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imagePlastic"
-        android:layout_width="100dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@id/imagePaper"
-        app:layout_constraintStart_toStartOf="@id/imageCan"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/plastic" />
+        android:layout_marginTop="32dp"
+        android:src="@drawable/plastic"
+        app:layout_constraintEnd_toStartOf="@id/imagePaper"
+        app:layout_constraintStart_toEndOf="@id/imageCan"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imagePaper"
-        android:layout_width="100dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/paper"
+        app:layout_constraintEnd_toStartOf="@id/imageNormal"
         app:layout_constraintStart_toEndOf="@id/imagePlastic"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/paper" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageNormal"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/wastes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imagePaper"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
         android:id="@+id/imageView4"
