@@ -1,7 +1,10 @@
 package com.example.project
 
+import android.graphics.Canvas
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.View
 import com.example.project.databinding.ActivityGameStartBinding
 import com.example.project.databinding.ActivityGamingBinding
 
@@ -14,6 +17,7 @@ class Gaming : AppCompatActivity() {
         binding = ActivityGamingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         binding.btnBack.setOnClickListener{
             finish()
         }
@@ -22,5 +26,10 @@ class Gaming : AppCompatActivity() {
             finish()
         }
 
+
+
     }
+
+
+
 }
