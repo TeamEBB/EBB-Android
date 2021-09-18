@@ -52,34 +52,10 @@
         android:id="@+id/imageTrash"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="500dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/tree1" />
-
-    <Button
-        android:id="@+id/btn_check_ranking"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="#BDF0E9"
-        android:text="랭킹"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageTrash" />
-
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="#BDF0E9"
-        android:text="돌아 가기"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_check_ranking" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

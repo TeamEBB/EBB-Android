@@ -18,13 +18,6 @@ class Gaming : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.btnBack.setOnClickListener{
-            finish()
-        }
-
-        binding.btnCheckRanking.setOnClickListener {
-            finish()
-        }
 
 
 
