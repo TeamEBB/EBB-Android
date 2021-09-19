@@ -1,6 +1,8 @@
 package com.example.project
 
 import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
@@ -10,6 +12,14 @@ import com.example.project.databinding.ActivityGamingBinding
 
 class Gaming : AppCompatActivity() {
 
+    val paint : Paint
+    init{
+        paint = Paint()
+        paint.isFilterBitmap = true
+        paint.isAntiAlias = true
+        paint.color = Color.YELLOW
+    }
+
     lateinit var binding: ActivityGamingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +27,7 @@ class Gaming : AppCompatActivity() {
         binding = ActivityGamingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
+        
 
     }
 
