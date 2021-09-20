@@ -1,61 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentCoordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Gaming">
 
-    <ImageView
-        android:id="@+id/imageCan"
-        android:layout_width="70dp"
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/can"
-        app:layout_constraintEnd_toStartOf="@id/imagePlastic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/draggableCan"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="center">
 
-    <ImageView
-        android:id="@+id/imagePlastic"
-        android:layout_width="70dp"
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/can"
+            />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/plastic"
-        app:layout_constraintEnd_toStartOf="@id/imagePaper"
-        app:layout_constraintStart_toEndOf="@id/imageCan"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/draggablePlastic"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="bottom|start">
 
-    <ImageView
-        android:id="@+id/imagePaper"
-        android:layout_width="70dp"
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/plastic"
+             />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/paper"
-        app:layout_constraintEnd_toStartOf="@id/imageNormal"
-        app:layout_constraintStart_toEndOf="@id/imagePlastic"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/draggablePaper"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="bottom|end">
 
-    <ImageView
-        android:id="@+id/imageNormal"
-        android:layout_width="70dp"
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/paper"
+             />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/wastes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imagePaper"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/draggableNormal"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="top|center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/wastes"
+             />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/draggableTrash"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="top|end">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree1" />
+
+
+    </com.google.android.material.card.MaterialCardView>
 
 
 
-    <ImageView
-        android:id="@+id/imageTrash"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="500dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/tree1" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
