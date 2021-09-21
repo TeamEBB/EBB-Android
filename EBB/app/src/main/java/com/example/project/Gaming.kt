@@ -10,7 +10,6 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_gaming.*
 
 
-
 class Gaming : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +21,8 @@ class Gaming : AppCompatActivity() {
         parentCoordinatorLayout.addDraggableChild(draggableCard3)
         parentCoordinatorLayout.addDraggableChild(draggableCard4)
 
-        parentCoordinatorLayout.setViewDragListener(object : DraggableCoordinatorLayout.ViewDragListener {
+        parentCoordinatorLayout.setViewDragListener(object :
+            DraggableCoordinatorLayout.ViewDragListener {
             override fun onViewCaptured(view: View, i: Int) {
 
                 when (view.id) {
